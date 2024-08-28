@@ -1,0 +1,259 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1280px;
+
+}
+
+/* main */
+main{
+    margin-top: -2em;
+    background-color: white;
+    padding: 0.3em;
+    border-radius: 0.3em;
+    
+}
+
+.main-title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/*utilitarias*/
+.bg-header{
+    background-color: rgb(106, 106, 204);
+    background-image: url("../sources/img/bg.webp");
+    background-repeat: no-repeat;
+    height: 18.75em;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.bg-navbar{
+    background-color: rgba(0, 0, 0, 0.63);
+    padding: 1.5em;
+
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.navbar-brand{
+    display: flex;
+    flex-direction: column;
+    color: wheat;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 1em;
+    align-items: center;
+}
+
+.navbar-brand img{
+    width: 2em;
+
+
+}
+
+.navbar-nav{
+    background-color: rgba(0, 0, 0,0.9);
+    padding: 1em;
+    border-radius: 0.3em;
+}
+
+.nav-link{
+    display: inline-block;
+    padding: 0.3em;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-link:hover{
+    background-color: white;
+    color: black;
+    border-radius: 0.5em;
+
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5em;
+    margin: 20px;
+    border-radius: 0.5em;
+}
+
+
+
+.btn-danger {
+    color: white;
+    background-color: rgb(106, 106, 204);
+}
+
+
+.btn-dark {
+    color: black;
+    background-color: rgb(106, 106, 204);
+}
+
+
+/* card */
+.card {
+    background-color: #29A66C;
+    color: white;
+    overflow: hidden;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+.card-img {
+    width: 100%;
+}
+
+.card-body {
+    padding: 1em;
+}
+
+.card-body h5 {
+    font-size: 1.5rem;
+    margin: 1em 0;
+    font-weight: 700;
+}
+
+.card-body p {
+    font-weight: 200;
+}
+
+
+/* Nosotros */
+.nosotros{
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-bottom: 1em;
+ background: #444040;   
+ 
+}
+
+.nosotros-col-img{
+    width: 100%;
+    background-image: url("../sources/img/bg2.webp");
+    background-color: rgb(106, 106, 204);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 27.875em;
+    order: 2;
+    
+
+}
+
+.nosotros-col-text{
+    order: 1;
+
+}
+
+
+
+.nosotros-body{
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+.nosotros-body h2{
+    text-transform: uppercase;
+    font-weight: 500;
+    
+}
+
+.nosotros-body p{
+    font-weight: 200;
+    margin-top: 20px;
+}
+
+
+.bg-footer{
+    background-color: #444040;
+    color: wheat;
+
+
+}
+
+.bg-footer p{
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+}
+
+@media (min-width:768px){
+    .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar-brand{
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+
+
+    .nosotros{
+        flex-direction: row;
+    }
+
+    .nosotros-col-img{
+        order: 1;
+        flex: 1 1 0;
+
+    }
+
+
+    .nosotros-col-text{
+        order: 2;
+        flex: 1 1 0;
+
+    }
+}
+
+@media(min-width:770px){
+    .tienda{
+        display: grid;
+        gap:1em;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}   
+
+
+@media (min-width:576px){
+
+    .nosotros-col-img{
+        height: 31.25em;
+    }
+
+
+}
+
+@media (min-width:900px ){
+    .tienda{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
